@@ -19,6 +19,7 @@
 }
 
 .research__picture {
+  position: relative;
   margin-right: 70px;
 }
 
@@ -27,6 +28,29 @@
     width: 298px;
     height: 345px;
   }
+}
+
+.research__picture::before {
+  content: "";
+  position: absolute;
+  top: 56px;
+  right: 50%;
+  transform: translateX(50%);
+  width: 202px;
+  height: 202px;
+  border-radius: 50%;
+  border: 13px solid $pink;
+}
+
+.research__number {
+  content: "";
+  position: absolute;
+  font-size: 94px;
+  line-height: 100px;
+  color: $pink;
+  top: 96px;
+  right: 50%;
+  transform: translateX(50%);
 }
 
 .research__details {

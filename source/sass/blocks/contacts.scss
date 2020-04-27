@@ -86,3 +86,20 @@
 .contacts__image-map {
   width: 100%;
 }
+
+.contacts__map {
+  position: relative;
+}
+
+.contacts__map::before {
+  content: "";
+  position: absolute;
+  background-image: url("../img/bg-triangle-white-footer.svg");
+  background-repeat:no-repeat;
+  background-position: center top;
+  top: 0;
+  right: 50%;
+  transform: translateX(50%);
+  width: 100%;
+  padding-top: 10.5%;
+}
