@@ -1,10 +1,13 @@
 <!DOCTYPE html>
 <html lang="ru">
-
 <head>
   <meta charset="utf-8">
   <title>HTML Academy: Пинк</title>
+  <link class="favicon" rel="shortcut icon" href="img/favicons/16x16.ico" type="image/x-icon">
+  <link class="favicon" rel="shortcut icon" href="img/favicons/32x32.ico" type="image/x-icon">
+  <link class="favicon" rel="shortcut icon" href="img/favicons/64x64.ico" type="image/x-icon">
   <link rel="preload" href="fonts\opensans.woff2" as="font">
+  <link href="sass/base/normalize.css" rel="stylesheet">
   <link href="css/style.min.css" rel="stylesheet">
   <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1">
 </head>
@@ -56,11 +59,11 @@
             <a class="users-list__link" href="#">
               <div class="users-list__image users-list__image--main">
                 <picture>
-                  <source type="image/webp" media="(min-width: 1200px)" srcset="img/webp/panorama-desktop_1x.webp 1x, img/webp/webp/panorama-desktop_2x.webp 2x">
+                  <source type="image/webp" media="(min-width: 960px)" srcset="img/webp/panorama-desktop_1x.webp 1x, img/webp/webp/panorama-desktop_2x.webp 2x">
                     <source type="image/webp" media="(min-width: 660px)" srcset="img/webp/panorama-tablet_1x.webp 1x, img/webp/panorama-tablet_2x.webp 2x">
                       <source type="image/webp" srcset="img/webp/panorama-mobile_1x.webp 1x, img/webp/panorama-mobile_2x.webp 2x">
 
-                        <source media="(min-width: 1200px)" srcset="img/panorama-desktop@1x.jpg 1x, img/panorama-desktop@2x.jpg 2x">
+                        <source media="(min-width: 960px)" srcset="img/panorama-desktop@1x.jpg 1x, img/panorama-desktop@2x.jpg 2x">
                           <source media="(min-width: 660px)" srcset="img/panorama-tablet@1x.jpg 1x, img/photo-car-tablet@2x.jpg 2x">
                             <img class="users-list__picture users-list__picture--main" src="img/panorama-mobile@1x.jpg" srcset="img/panorama-mobile@2x.jpg 2x" width="320" height="137" alt="Панорама леса">
                           </picture>
@@ -86,11 +89,11 @@
                       <a class="users-list__link" href="#">
                         <div class="users-list__image">
                           <picture>
-                            <source type="image/webp" media="(min-width: 1200px)" srcset="img/webp/photo-car-desktop_1x.webp 1x, img/webp/webp/photo-car-desktop_2x.webp 2x">
+                            <source type="image/webp" media="(min-width: 960px)" srcset="img/webp/photo-car-desktop_1x.webp 1x, img/webp/webp/photo-car-desktop_2x.webp 2x">
                               <source type="image/webp" media="(min-width: 660px)" srcset="img/webp/photo-car-tablet_1x.webp 1x, img/webp/photo-car-tablet_2x.webp 2x">
                                 <source type="image/webp" srcset="img/webp/photo-car-mobile_1x.webp 1x, img/webp/photo-car-mobile_2x.webp 2x">
 
-                                  <source media="(min-width: 1200px)" srcset="img/photo-car-desktop@1x.jpg 1x, img/photo-car-desktop@2x.jpg 2x">
+                                  <source media="(min-width: 960px)" srcset="img/photo-car-desktop@1x.jpg 1x, img/photo-car-desktop@2x.jpg 2x">
                                     <source media="(min-width: 660px)" srcset="img/photo-car-tablet@1x.jpg 1x, img/photo-car-tablet@2x.jpg 2x">
                                       <img class="users-list__picture" src="img/photo-car-mobile@1x.jpg" srcset="im/photo-car-mobile@2x.jpg 2x" width="280" height="180" alt="Фото машины">
                                     </picture>
@@ -115,11 +118,11 @@
                                 <a class="users-list__link" href="#">
                                   <div class="users-list__image">
                                     <picture>
-                                      <source type="image/webp" media="(min-width: 1200px)" srcset="img/webp/photo-drumset-desktop_1x.webp 1x, img/webp/webp/photo-drumset-desktop_2x.webp 2x">
+                                      <source type="image/webp" media="(min-width: 960px)" srcset="img/webp/photo-drumset-desktop_1x.webp 1x, img/webp/webp/photo-drumset-desktop_2x.webp 2x">
                                         <source type="image/webp" media="(min-width: 660px)" srcset="img/webp/photo-drumset-tablet_1x.webp 1x, img/webp/photo-drumset-tablet_2x.webp 2x">
                                           <source type="image/webp" srcset="img/webp/photo-drumset-mobile_1x.webp 1x, img/webp/photo-drumset-mobile_2x.webp 2x">
 
-                                            <source media="(min-width: 1200px)" srcset="img/photo-drumset-desktop@1x.jpg 1x, img/photo-drumset-desktop@2x.jpg 2x">
+                                            <source media="(min-width: 960px)" srcset="img/photo-drumset-desktop@1x.jpg 1x, img/photo-drumset-desktop@2x.jpg 2x">
                                               <source media="(min-width: 660px)" srcset="img/photo-drumset-tablet@1x.jpg 1x, img/photo-drumset-tablet@2x.jpg 2x">
                                                 <img class="users-list__picture" src="img/photo-drumset-mobile@1x.jpg" srcset="img/photo-drumset-mobile@2x.jpg" width="280" height="180" alt="Барабанная установка">
                                               </picture>
@@ -144,11 +147,11 @@
                                           <a class="users-list__link" href="#">
                                             <div class="users-list__image">
                                               <picture>
-                                                <source type="image/webp" media="(min-width: 1200px)" srcset="img/webp/photo-window-desktop_1x.webp 1x, img/webp/webp/photo-window-desktop_2x.webp 2x">
+                                                <source type="image/webp" media="(min-width: 960px)" srcset="img/webp/photo-window-desktop_1x.webp 1x, img/webp/webp/photo-window-desktop_2x.webp 2x">
                                                   <source type="image/webp" media="(min-width: 660px)" srcset="img/webp/photo-window-tablet_1x.webp 1x, img/webp/photo-window-tablet_2x.webp 2x">
                                                     <source type="image/webp" srcset="img/webp/photo-window-mobile_1x.webp 1x, img/webp/photo-window-mobile_2x.webp 2x">
 
-                                                      <source media="(min-width: 1200px)" srcset="img/photo-window-desktop@1x.jpg 1x, img/photo-window-desktop@2x.jpg 2x">
+                                                      <source media="(min-width: 960px)" srcset="img/photo-window-desktop@1x.jpg 1x, img/photo-window-desktop@2x.jpg 2x">
                                                         <source media="(min-width: 660px)" srcset="img/photo-window-tablet@1x.jpg 1x, img/photo-window-tablet@2x.jpg 2x">
                                                           <img class="users-list__picture" src="img/photo-window-mobile@1x.jpg" srcset="img/photo-window-mobile@2x.jpg" width="280" height="180" alt="Стеклянная крыша">
                                                         </picture>
@@ -173,11 +176,11 @@
                                                     <a class="users-list__link" href="#">
                                                       <div class="users-list__image">
                                                         <picture>
-                                                          <source type="image/webp" media="(min-width: 1200px)" srcset="img/webp/photo-fair-desktop_1x.webp 1x, img/webp/webp/photo-fair-desktop_2x.webp 2x">
+                                                          <source type="image/webp" media="(min-width: 960px)" srcset="img/webp/photo-fair-desktop_1x.webp 1x, img/webp/webp/photo-fair-desktop_2x.webp 2x">
                                                             <source type="image/webp" media="(min-width: 660px)" srcset="img/webp/photo-fair-tablet_1x.webp 1x, img/webp/photo-fair-tablet_2x.webp 2x">
                                                               <source type="image/webp" srcset="img/webp/photo-fair-mobile_1x.webp 1x, img/webp/photo-fair-mobile_2x.webp 2x">
 
-                                                                <source media="(min-width: 1200px)" srcset="img/photo-fair-desktop@1x.jpg 1x, img/photo-fair-desktop@2x.jpg 2x">
+                                                                <source media="(min-width: 960px)" srcset="img/photo-fair-desktop@1x.jpg 1x, img/photo-fair-desktop@2x.jpg 2x">
                                                                   <source media="(min-width: 660px)" srcset="img/photo-fair-tablet@1x.jpg 1x, img/photo-fair-tablet@2x.jpg 2x">
                                                                     <img class="users-list__picture" src="img/photo-fair-mobile@1x.jpg" srcset="img/photo-fair-mobile@2x.jpg" width="280" height="180" alt="Кубанский рынок">
                                                                   </picture>
@@ -202,11 +205,11 @@
                                                               <a class="users-list__link" href="#">
                                                                 <div class="users-list__image">
                                                                   <picture>
-                                                                    <source type="image/webp" media="(min-width: 1200px)" srcset="img/webp/photo-pov-desktop_1x.webp 1x, img/webp/webp/photo-pov-desktop_2x.webp 2x">
+                                                                    <source type="image/webp" media="(min-width: 960px)" srcset="img/webp/photo-pov-desktop_1x.webp 1x, img/webp/webp/photo-pov-desktop_2x.webp 2x">
                                                                       <source type="image/webp" media="(min-width: 660px)" srcset="img/webp/photo-pov-tablet_1x.webp 1x, img/webp/photo-pov-tablet_2x.webp 2x">
                                                                         <source type="image/webp" srcset="img/webp/photo-pov-mobile_1x.webp 1x, img/webp/photo-pov-mobile_2x.webp 2x">
 
-                                                                          <source media="(min-width: 1200px)" srcset="img/photo-pov-desktop@1x.jpg 1x, img/photo-pov-desktop@2x.jpg 2x">
+                                                                          <source media="(min-width: 960px)" srcset="img/photo-pov-desktop@1x.jpg 1x, img/photo-pov-desktop@2x.jpg 2x">
                                                                             <source media="(min-width: 660px)" srcset="img/photo-pov-tablet@1x.jpg 1x, img/photo-pov-tablet@2x.jpg 2x">
                                                                               <img class="users-list__picture" src="img/photo-pov-mobile@1x.jpg" srcset="img/photo-pov-mobile@2x.jpg" width="280" height="180" alt="Вид с горы">
                                                                             </picture>
@@ -231,11 +234,11 @@
                                                                         <a class="users-list__link" href="#">
                                                                           <div class="users-list__image">
                                                                             <picture>
-                                                                              <source type="image/webp" media="(min-width: 1200px)" srcset="img/webp/photo-wing-desktop_1x.webp 1x, img/webp/webp/photo-wing-desktop_2x.webp 2x">
+                                                                              <source type="image/webp" media="(min-width: 960px)" srcset="img/webp/photo-wing-desktop_1x.webp 1x, img/webp/webp/photo-wing-desktop_2x.webp 2x">
                                                                                 <source type="image/webp" media="(min-width: 660px)" srcset="img/webp/photo-wing-tablet_1x.webp 1x, img/webp/photo-wing-tablet_2x.webp 2x">
                                                                                   <source type="image/webp" srcset="img/webp/photo-wing-mobile_1x.webp 1x, img/webp/photo-wing-mobile_2x.webp 2x">
 
-                                                                                    <source media="(min-width: 1200px)" srcset="img/photo-wing-desktop@1x.jpg 1x, img/photo-wing-desktop@2x.jpg 2x">
+                                                                                    <source media="(min-width: 960px)" srcset="img/photo-wing-desktop@1x.jpg 1x, img/photo-wing-desktop@2x.jpg 2x">
                                                                                       <source media="(min-width: 660px)" srcset="img/photo-wing-tablet@1x.jpg 1x, img/photo-wing-tablet@2x.jpg 2x">
                                                                                         <img class="users-list__picture" src="img/photo-wing-mobile@1x.jpg" srcset="img/photo-wing-mobile@2x.jpg" width="280" height="180" alt="Крыло самолета">
                                                                                       </picture>
@@ -267,11 +270,11 @@
                                                                                 <div class="container">
                                                                                   <div class="loading__post">
                                                                                     <picture>
-                                                                                      <source type="image/webp" media="(min-width: 1200px)" srcset="img/webp/photo-road-desktop_1x.webp 1x, img/webp/webp/photo-road-desktop_2x.webp 2x">
+                                                                                      <source type="image/webp" media="(min-width: 960px)" srcset="img/webp/photo-road-desktop_1x.webp 1x, img/webp/webp/photo-road-desktop_2x.webp 2x">
                                                                                         <source type="image/webp" media="(min-width: 660px)" srcset="img/webp/photo-road-tablet_1x.webp 1x, img/webp/photo-road-tablet_2x.webp 2x">
                                                                                           <source type="image/webp" srcset="img/webp/photo-road-mobile_1x.webp 1x, img/webp/photo-road-mobile_2x.webp 2x">
 
-                                                                                            <source media="(min-width: 1200px)" srcset="img/photo-road-desktop@1x.jpg 1x, img/photo-road-desktop@2x.jpg 2x">
+                                                                                            <source media="(min-width: 960px)" srcset="img/photo-road-desktop@1x.jpg 1x, img/photo-road-desktop@2x.jpg 2x">
                                                                                               <source media="(min-width: 660px)" srcset="img/photo-road-tablet@1x.jpg 1x, img/photo-road-tablet@2x.jpg 2x">
                                                                                                 <img class="loading__picture" src="img/photo-road-mobile@1x.jpg" srcset="img/photo-road-mobile@2x.jpg" width="280" height="374" alt="Снежная дорога">
                                                                                               </picture>
@@ -291,7 +294,7 @@
                                                                                                         <use xlink:href="#icon-editor-fill" />
                                                                                                       </svg>
                                                                                                     </button>
-                                                                                                    <div class="button-toggle__slider"><span class="button-toggle__switch"></span></div>
+                                                                                                    <div class="button-toggle__slider"><span class="button-toggle__switch button-toggle__switch--fill"></span></div>
                                                                                                   </div>
                                                                                                   <div class="button-toggle__wrapper">
                                                                                                     <button class="button-toggle__icon button-toggle__icon--contrast" type="button">
@@ -299,7 +302,7 @@
                                                                                                         <use xlink:href="#icon-editor-contrast" />
                                                                                                       </svg>
                                                                                                     </button>
-                                                                                                    <div class="button-toggle__slider"><span class="button-toggle__switch"></span></div>
+                                                                                                    <div class="button-toggle__slider"><span class="button-toggle__switch button-toggle__switch--contrast"></span></div>
                                                                                                   </div>
                                                                                                 </div>
                                                                                                 <div class="loading__slider"><span class="loading__slider__switch"></span></div>

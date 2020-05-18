@@ -3,7 +3,11 @@
 <head>
   <meta charset="utf-8">
   <title>HTML Academy: Пинк</title>
+  <link class="favicon" rel="shortcut icon" href="img/favicons/16x16.ico" type="image/x-icon">
+  <link class="favicon" rel="shortcut icon" href="img/favicons/32x32.ico" type="image/x-icon">
+  <link class="favicon" rel="shortcut icon" href="img/favicons/64x64.ico" type="image/x-icon">
   <link rel="preload" href="fonts\opensans.woff2" as="font">
+  <link href="sass/base/normalize.css" rel="stylesheet">
   <link href="css/style.min.css" rel="stylesheet">
   <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1">
 </head>
@@ -200,198 +204,231 @@
                 <section class="prices">
                   <div class="container">
                     <h2 class="visually-hidden">Прейскурант сайта Pink</h2>
-                    <table class="prices__table">
-                      <tr>
-                        <th class="prices__heading prices__heading--off"></th>
-                        <th class="prices__heading prices__heading--showmobile">
-                          <p class="prices__title">База</p>
-                          <p class="prices__worth">1,99 USD</p>
-                        </th>
-                        <th class="prices__heading prices__heading--hit">
-                          <span class="prices__hit">Хит</span>
-                          <p class="prices__title">Стандарт</p>
-                          <p class="prices__worth">3,99 USD</p>
-                        </th>
-                        <th class="prices__heading prices__heading--showmobile">
-                          <p class="prices__title">Анлим</p>
-                          <p class="prices__worth">9,99 USD</p>
-                        </th>
+                    <div class="prices__wrapper">
+                      <table class="prices__table">
+                        <tr>
+                          <th class="prices__heading prices__heading--off"></th>
+                          <th class="prices__heading">
+                            <p class="prices__title">База</p>
+                            <p class="prices__worth">1,99 USD</p>
+                          </th>
+                          <th class="prices__heading prices__heading--hit">
+                            <span class="prices__hit">Хит</span>
+                            <p class="prices__title">Стандарт</p>
+                            <p class="prices__worth">3,99 USD</p>
+                          </th>
+                          <th class="prices__heading">
+                            <p class="prices__title">Анлим</p>
+                            <p class="prices__worth">9,99 USD</p>
+                          </th>
+                        </tr>
+                        <td class="prices__option">
+                          Розовый фильтр
+                        </td>
+                        <td class="prices__choice">
+                          <div class="prices__choice-wrapper">
+                            <div class="prices__text">
+                              Розовый фильтр
+                            </div>
+                            <svg class="prices__yes" width="31" height="21">
+                              <use xlink:href="#icon-yes" />
+                            </svg>
+                          </div>
+                        </td>
+                        <td class="prices__choice">
+                          <div class="prices__choice-wrapper">
+                            <div class="prices__text">
+                              Розовый фильтр
+                            </div>
+                            <svg class="prices__yes" width="31" height="21">
+                              <use xlink:href="#icon-yes" />
+                            </svg>
+                          </div>
+                        </td>
+                        <td class="prices__choice">
+                          <div class="prices__choice-wrapper">
+                            <div class="prices__text">
+                              Розовый фильтр
+                            </div>
+                            <svg class="prices__yes" width="31" height="21">
+                              <use xlink:href="#icon-yes" />
+                            </svg>
+                          </div>
+                        </td>
                       </tr>
-                      <td class="prices__option">
-                        Розовый фильтр
-                        <div class="prices__selection">
-                          <svg class="prices__yes" width="31" height="21">
-                            <use xlink:href="#icon-yes" />
-                          </svg>
+                      <tr>
+                        <td class="prices__option">
+                          Смайлики
+                        </td>
+                        <td class="prices__choice">
+                          <div class="prices__choice-wrapper">
+                            <div class="prices__text">
+                              Смайлики
+                            </div>
+                            <svg class="prices__no" width="27" height="27">
+                              <use xlink:href="#icon-no" />
+                            </svg>
+                          </div>
+                        </td>
+                        <td class="prices__choice">
+                          <div class="prices__choice-wrapper">
+                            <div class="prices__text">
+                              Смайлики
+                            </div>
+                            <svg class="prices__yes" width="31" height="21">
+                              <use xlink:href="#icon-yes" />
+                            </svg>
+                          </div>
+                        </td>
+                        <td class="prices__choice">
+                          <div class="prices__choice-wrapper">
+                            <div class="prices__text">
+                              Смайлики
+                            </div>
+                            <svg class="prices__yes" width="31" height="21">
+                              <use xlink:href="#icon-yes" />
+                            </svg>
+                          </div>
+                        </td>
+                      </tr>
+                      <tr>
+                        <td class="prices__option">
+                          Комментарии
+                        </td>
+                        <td class="prices__choice">
+                          <div class="prices__choice-wrapper">
+                            <div class="prices__text">
+                              Комментарии
+                            </div>
+                            <svg class="prices__no" width="27" height="27">
+                              <use xlink:href="#icon-no" />
+                            </svg>
+                          </div>
+                        </td>
+                        <td class="prices__choice">
+                          <div class="prices__choice-wrapper">
+                            <div class="prices__text">
+                              Комментарии
+                            </div>
+                            <svg class="prices__no" width="27" height="27">
+                              <use xlink:href="#icon-no" />
+                            </svg>
+                          </div>
+                        </td>
+                        <td class="prices__choice">
+                          <div class="prices__choice-wrapper">
+                            <div class="prices__text">
+                              Комментарии
+                            </div>
+                            <svg class="prices__yes" width="31" height="21">
+                              <use xlink:href="#icon-yes" />
+                            </svg>
+                          </div>
                         </div>
-                      </td>
-                      <td class="prices__choice">
-                        <svg class="prices__yes" width="31" height="21">
-                          <use xlink:href="#icon-yes" />
-                        </svg>
-                      </td>
-                      <td class="prices__choice">
-                        <svg class="prices__yes" width="31" height="21">
-                          <use xlink:href="#icon-yes" />
-                        </svg>
-                      </td>
-                      <td class="prices__choice">
-                        <svg class="prices__yes" width="31" height="21">
-                          <use xlink:href="#icon-yes" />
-                        </svg>
-                      </td>
-                    </tr>
-                    <tr>
-                      <td class="prices__option">
-                        Смайлики
-                        <div class="prices__selection">
-                          <svg class="prices__yes" width="31" height="21">
-                            <use xlink:href="#icon-yes" />
-                          </svg>
-                        </div>
-                      </td>
-                      <td class="prices__choice">
-                        <svg class="prices__no" width="27" height="27">
-                          <use xlink:href="#icon-no" />
-                        </svg>
-                      </td>
-                      <td class="prices__choice">
-                        <svg class="prices__yes" width="31" height="21">
-                          <use xlink:href="#icon-yes" />
-                        </svg>
-                      </td>
-                      <td class="prices__choice">
-                        <svg class="prices__yes" width="31" height="21">
-                          <use xlink:href="#icon-yes" />
-                        </svg>
-                      </td>
-                    </tr>
-                    <tr>
-                      <td class="prices__option">
-                        Комментарии
-                        <div class="prices__selection">
-                          <svg class="prices__no" width="27" height="27">
-                            <use xlink:href="#icon-no" />
-                          </svg>
-                        </div>
-                      </td>
-                      <td class="prices__choice">
-                        <svg class="prices__no" width="27" height="27">
-                          <use xlink:href="#icon-no" />
-                        </svg>
-                      </td>
-                      <td class="prices__choice">
-                        <svg class="prices__no" width="27" height="27">
-                          <use xlink:href="#icon-no" />
-                        </svg>
-                      </td>
-                      <td class="prices__choice">
-                        <svg class="prices__yes" width="31" height="21">
-                          <use xlink:href="#icon-yes" />
-                        </svg>
                       </td>
                     </tr>
                   </table>
-                  <ul class="prices__toggles dots dots--prices">
-                    <li class="dots__item">
-                      <button class="dots__button" type="button"></button>
-                    </li>
-                    <li class="dots__item">
-                      <button class="dots__button dots__button--active" type="button"></button>
-                    </li>
-                    <li class="dots__item">
-                      <button class="dots__button" type="button"></button>
-                    </li>
-                  </ul>
                 </div>
+                <ul class="prices__toggles dots dots--prices">
+                  <li class="dots__item">
+                    <button class="dots__button" type="button"></button>
+                  </li>
+                  <li class="dots__item">
+                    <button class="dots__button dots__button--active" type="button"></button>
+                  </li>
+                  <li class="dots__item">
+                    <button class="dots__button" type="button"></button>
+                  </li>
+                </ul>
               </div>
             </div>
           </div>
-        </section>
-      </main>
-      <div class="contacts">
-        <h2 class="visually-hidden">Обратная связь компании Pink</h2>
-        <div class="container">
-          <h3 class="contacts__questions">Остались вопросы?<br> Свяжитесь с нами!</h3>
-          <ul class="contacts__list">
-            <li class="contacts__item">
-              <div class="contacts__title">Звоните:</div>
-              <a class="contacts__relations" href="tel:+7(812)5556666">+7 (812) 555-66-66</a>
-            </li>
-            <li class="contacts__item">
-              <div class="contacts__title">Пишите:</div>
-              <a class="contacts__relations" href="#">mail@htmlacademy.ru</a>
-            </li>
-            <li class="contacts__item">
-              <div class="contacts__title" >Приезжайте в гости:</div>
-              <a class="contacts__relations" href="#">ул. Большая<br> Конюшенная, 19/8</a>
-            </li>
-          </ul>
         </div>
+      </section>
+    </main>
+    <div class="contacts">
+      <h2 class="visually-hidden">Обратная связь компании Pink</h2>
+      <div class="container">
+        <h3 class="contacts__questions">Остались вопросы?<br> Свяжитесь с нами!</h3>
+        <ul class="contacts__list">
+          <li class="contacts__item">
+            <div class="contacts__title">Звоните:</div>
+            <a class="contacts__relations" href="tel:+7(812)5556666">+7 (812) 555-66-66</a>
+          </li>
+          <li class="contacts__item">
+            <div class="contacts__title">Пишите:</div>
+            <a class="contacts__relations" href="#">mail@htmlacademy.ru</a>
+          </li>
+          <li class="contacts__item">
+            <div class="contacts__title" >Приезжайте в гости:</div>
+            <a class="contacts__relations" href="#">ул. Большая<br> Конюшенная, 19/8</a>
+          </li>
+        </ul>
+      </div>
 
-        <div class="contacts__map">
-          <iframe src="https://yandex.ru/map-widget/v1/?um=constructor%3A46524ab5c0e9ed8c0828eb8c8a87dfcfd3088ea2a87a2ad16cc767250c17b7d8&amp;source=constructor"
-                  width="100%" height="550" frameborder="0"></iframe>
-          <picture>
-            <source type="image/webp" media="(min-width: 1200px)" srcset="img/webp/bg-map-desktop_1x.webp 1x, img/webp/webp/bg-map-desktop_2x.webp 2x">
-              <source type="image/webp" media="(min-width: 660px)" srcset="img/webp/bg-map-tablet_1x.webp 1x, img/webp/bg-map-tablet_2x.webp 2x">
-                <source type="image/webp" srcset="img/webp/bg-map-mobile_1x.webp 1x, img/webp/bg-map-mobile_2x.webp 2x">
+      <div class="contacts__map">
+        <iframe src="https://yandex.ru/map-widget/v1/?um=constructor%3A46524ab5c0e9ed8c0828eb8c8a87dfcfd3088ea2a87a2ad16cc767250c17b7d8&amp;source=constructor"
+        width="100%" height="550" frameborder="0"></iframe>
+        <picture>
+          <source type="image/webp" media="(min-width: 960px)" srcset="img/webp/bg-map-desktop_1x.webp 1x, img/webp/webp/bg-map-desktop_2x.webp 2x">
+            <source type="image/webp" media="(min-width: 660px)" srcset="img/webp/bg-map-tablet_1x.webp 1x, img/webp/bg-map-tablet_2x.webp 2x">
+              <source type="image/webp" srcset="img/webp/bg-map-mobile_1x.webp 1x, img/webp/bg-map-mobile_2x.webp 2x">
 
-                  <source media="(min-width: 1200px)" srcset="img/bg-map-desktop@1x.jpg 1x, img/bg-map-desktop@2x.jpg 2x">
-                    <source media="(min-width: 660px)" srcset="img/bg-map-tablet@1x.jpg 1x, img/bg-map-tablet@2x.jpg 2x">
-                      <img  class="contacts__image-map" src="img/bg-map-mobile@1x.png" srcset="img/bg-map-mobile@2x.jpg 2x" alt="Карта">
-                    </picture>
-                  </div>
+                <source media="(min-width: 960px)" srcset="img/bg-map-desktop@1x.jpg 1x, img/bg-map-desktop@2x.jpg 2x">
+                  <source media="(min-width: 660px)" srcset="img/bg-map-tablet@1x.jpg 1x, img/bg-map-tablet@2x.jpg 2x">
+                    <img  class="contacts__image-map" src="img/bg-map-mobile@1x.png" srcset="img/bg-map-mobile@2x.jpg 2x" alt="Карта">
+                  </picture>
                 </div>
-                <footer class="footer footer--hidden">
-                  <h2 class="visually-hidden">Контакты сайта Pink</h2>
-                  <div class="container">
-                    <div class="footer__advertising">
-                      <div class="footer__link">
-                        <a class="footer__logo" href="#" aria-label="Логотип сайта Pink">
-                          <svg class="footer__image" width="147" height="40">
-                            <use xlink:href="#logo-pink-blue-mobile" />
-                          </svg>
-                          <svg class="footer__image footer__image--desktop" width="147" height="40">
-                            <use xlink:href="#logo-pink-blue-desktop" />
-                          </svg>
-                        </a>
-                      </div>
-                      <ul class="footer__social social">
-                        <li class="social__item">
-                          <a class="social__link" href="https://www.twitter.com" aria-label="twitter" title="twitter">
-                            <svg class="social__image" width="17" height="15">
-                              <use xlink:href="#icon-twitter" />
-                            </svg>
-                          </a>
-                        </li>
-                        <li class="social__item">
-                          <a class="social__link" href="https://www.facebook.com" aria-label="facebook" title="facebook">
-                            <svg class="social__image" width="9" height="19">
-                              <use xlink:href="#icon-facebook" />
-                            </svg>
-                          </a>
-                        </li>
-                        <li class="social__item">
-                          <a class="social__link" href="https://www.youtube.com" aria-label="youtube" title="youtube">
-                            <svg class="social__image" width="15" height="14">
-                              <use xlink:href="#icon-youtube" />
-                            </svg>
-                          </a>
-                        </li>
-                      </ul>
-                      <div class="footer__developer">
-                        <p class="footer__text">Разработано</p>
-                        <a class="footer__htmlacademy" href="https://htmlacademy.ru/" aria-label="htmlacademy" title="htmlacademy">
-                          <svg class="footer__htmlacademy-image" width="27" height="34">
-                            <use xlink:href="#logo-htmlacademy" />
+              </div>
+              <footer class="footer footer--hidden">
+                <h2 class="visually-hidden">Контакты сайта Pink</h2>
+                <div class="container">
+                  <div class="footer__advertising">
+                    <div class="footer__link">
+                      <a class="footer__logo" href="#" aria-label="Логотип сайта Pink">
+                        <svg class="footer__image" width="147" height="40">
+                          <use xlink:href="#logo-pink-blue-mobile" />
+                        </svg>
+                        <svg class="footer__image footer__image--desktop" width="147" height="40">
+                          <use xlink:href="#logo-pink-blue-desktop" />
+                        </svg>
+                      </a>
+                    </div>
+                    <ul class="footer__social social">
+                      <li class="social__item">
+                        <a class="social__link" href="https://www.twitter.com" aria-label="twitter" title="twitter">
+                          <svg class="social__image" width="17" height="15">
+                            <use xlink:href="#icon-twitter" />
                           </svg>
                         </a>
-                      </div>
+                      </li>
+                      <li class="social__item">
+                        <a class="social__link" href="https://www.facebook.com" aria-label="facebook" title="facebook">
+                          <svg class="social__image" width="9" height="19">
+                            <use xlink:href="#icon-facebook" />
+                          </svg>
+                        </a>
+                      </li>
+                      <li class="social__item">
+                        <a class="social__link" href="https://www.youtube.com" aria-label="youtube" title="youtube">
+                          <svg class="social__image" width="15" height="14">
+                            <use xlink:href="#icon-youtube" />
+                          </svg>
+                        </a>
+                      </li>
+                    </ul>
+                    <div class="footer__developer">
+                      <p class="footer__text">Разработано</p>
+                      <a class="footer__htmlacademy" href="https://htmlacademy.ru/" aria-label="htmlacademy" title="htmlacademy">
+                        <svg class="footer__htmlacademy-image" width="27" height="34">
+                          <use xlink:href="#logo-htmlacademy" />
+                        </svg>
+                      </a>
                     </div>
                   </div>
-                </footer>
-                <script src="js/picturefill.js"></script>
-                <script src="js/main.js"></script>
-              </body>
-              </html>
+                </div>
+              </footer>
+              <script src="js/picturefill.js"></script>
+              <script src="js/main.js"></script>
+            </body>
+            </html>
