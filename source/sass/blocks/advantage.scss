@@ -2,10 +2,6 @@
   position: relative;
   background-color: $gray;
   z-index: 1;
-
-  @include media-width($desktop-width) {
-    background-color: $white;
-  }
 }
 
 .advantage__wrapper {
@@ -67,8 +63,4 @@
   padding-top: 8%;
   top: -1px;
   z-index: -1;
-
-  @include media-width($desktop-width) {
-    top: 9px;
-  }
 }

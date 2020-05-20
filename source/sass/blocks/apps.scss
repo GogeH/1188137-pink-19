@@ -6,6 +6,7 @@
   margin-bottom: 19px;
   padding-right: 38px;
   padding-left: 38px;
+  list-style: none;
 
   @include media-width($tablet-width) {
     margin-bottom: 35px;

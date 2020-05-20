@@ -51,9 +51,11 @@
 }
 
 .reviews__name {
+  text-align: center;
   font-size: 18px;
   line-height: 30px;
   color: $black;
+  margin-top: 0;
   margin-bottom: 13px;
 
   @include media-width($tablet-width) {
@@ -72,6 +74,7 @@
   line-height: 30px;
   color: $dark;
   text-align: center;
+  margin: 0;
 
   @include media-width($tablet-width) {
     display: block;
@@ -87,6 +90,7 @@
   line-height: 30px;
   text-align: center;
   color: $dark;
+  margin: 0;
 
   @include media-width($tablet-width) {
     font-size: 18px;

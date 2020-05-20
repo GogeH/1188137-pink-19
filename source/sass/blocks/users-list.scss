@@ -1,4 +1,8 @@
 .users-list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+
   @include media-width($tablet-width) {
     display: flex;
     flex-wrap: wrap;

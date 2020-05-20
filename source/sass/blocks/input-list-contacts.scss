@@ -1,4 +1,8 @@
 .input-list-contacts__catalog {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+
   @include media-width($tablet-width) {
     padding-left: 58px;
     padding-right: 58px;
@@ -75,8 +79,9 @@
   position: relative;
 }
 
-.input-list-contacts__image {
+.input-list-contacts__field::before {
   display: none;
+  content: "";
   position: absolute;
   background-image: url("../img/icon-phone.svg");
   background-repeat: no-repeat;
@@ -93,6 +98,6 @@
   }
 }
 
-.input-list-contacts__image--email {
+.input-list-contacts__field--mail::before {
   background-image: url("../img/icon-mail.svg");
 }

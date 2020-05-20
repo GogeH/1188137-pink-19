@@ -1,6 +1,7 @@
 .checkbox-list {
-  margin: 0;
   padding: 0;
+  margin: 0;
+  list-style: none;
 
   @include media-width($tablet-width) {
     margin-bottom: 48px;
@@ -90,6 +91,16 @@
 
 .checkbox-list__label:active::before {
   border-color: $pink;
+}
+
+.checkbox-list__input:focus + .checkbox-list__label::before {
+  border-color: $dark;
+}
+
+.checkbox-list__input:disabled + .checkbox-list__label::before {
+  border-color: $gray;
+  background-color: $gray;
+  opacity: 0.5;
 }
 
 .checkbox-list__input {

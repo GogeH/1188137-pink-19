@@ -109,14 +109,12 @@
             <li class="input-list-contacts__item">
               <label class="input-list-contacts__label" for="phone">Номер телефона</label>
               <div class="input-list-contacts__field">
-                <div class="input-list-contacts__image"></div>
                 <input class="input-list-contacts__text" type="tel" id="phone" name="phone" placeholder="Номер, пожалуйста" title="Введите ваш номер телефона" pattern="[0-9]{6,13}" required="">
               </div>
             </li>
             <li class="input-list-contacts__item">
               <label class="input-list-contacts__label" for="email">Адрес почты</label>
-              <div class="input-list-contacts__field">
-                <div class="input-list-contacts__image input-list-contacts__image--email"></div>
+              <div class="input-list-contacts__field input-list-contacts__field--mail">
                 <input class="input-list-contacts__text" type="email" id="email" name="email" placeholder="Введите почту *" title="Введите ваш e-mail" required="">
               </div>
             </li>
@@ -124,7 +122,7 @@
         </fieldset>
         <fieldset class="form__platform radio-list">
           <legend class="form__title form__title--platform"><span class="form__heading">С каким приложением путешествовали?</span></legend>
-          <ul class="radio-list">
+          <ul class="radio-list__roster">
             <li class="radio-list__item">
               <input class="radio-list__input" type="radio" id="radio1" name="radio" checked>
               <label class="radio-list__label" for="radio1">Pink для iOS</label>
